@@ -1,5 +1,5 @@
 site_name: DART Platform
-site_author: Artur Cruz
+site_author: Artur Cruz, Renan Mello, Daniel Kim
 repo_url: https://github.com/InsperDART/microservices
 repo_name: github/microservices
 
@@ -107,10 +107,6 @@ plugins:
   - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
-  - git-authors
-  - git-committers:
-      repository: InsperDART/microservices
-      branch: main
   - search
   - badges
   - minify:
@@ -118,15 +114,6 @@ plugins:
   - markdown-exec
   - render_swagger:
       allow_arbitrary_locations : true
-  - termynal:
-      prompt_literal_start:
-        - "$"
-        - ">"
-
-# mkdocs-jupyter
-  - mkdocs-jupyter:
-      execute: false
-      allow_errors: false
 
 extra_javascript:
   - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
@@ -135,8 +122,6 @@ extra_javascript:
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
-  # Para a implementação do mkdocs-jupyter
-  - javascripts/mathjax.js
-
 nav:
   - Home: index.md
+  - Autenticação: autenticacao.md
