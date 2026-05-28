@@ -25,3 +25,6 @@
 [submodule "api/order"]
 	path = api/order
 	url = https://github.com/InsperDART/order
+[submodule "api/gateway-service"]
+	path = api/gateway-service
+	url = https://github.com/InsperDART/gateway-service.git
