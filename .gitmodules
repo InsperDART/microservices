@@ -28,3 +28,6 @@
 [submodule "api/gateway-service"]
 	path = api/gateway-service
 	url = https://github.com/InsperDART/gateway-service.git
+[submodule "web/app"]
+	path = web/app
+	url = https://github.com/InsperDART/site.git
