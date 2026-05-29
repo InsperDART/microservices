@@ -46,8 +46,7 @@ services:
       DATABASE_USERNAME: ${DB_USER:-store}
       DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
     depends_on:
-      db:
-        condition: service_healthy
+      - gateway
 
   auth:
     build:
